@@ -4,3 +4,20 @@
     margin: 0;
     padding: 0;
 }
+
+.cabecalho{
+    padding: 10px;
+}
+
+.cabecalho__menu{
+    display: flex;
+    gap: 80px;
+}
+
+.cabecalho__menu__link{
+    color: #3bfd22;
+    font-family: 'Russo One', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    
+}
