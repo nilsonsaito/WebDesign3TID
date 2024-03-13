@@ -10,16 +10,37 @@ body {
     box-sizing: border-box;
     color: white;
 }
-.cabecalho{
-    padding: 2% 0% 0% 15%;
+
+.cabecalho  {
+    padding: 2% 10% 0% 10%;
 }
 
-.cabecalho__menu{
+.cabecalho__marca {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 2%;
+}
+
+.cabecalho__marca__logo{
+    width: 8%;
+}
+
+.cabecalho__marca__nome {
+    font-family: "Russo One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3.5rem;
+    width: 100%;
+    padding: 2%;
+
+}
+
+.cabecalho__menu {
     display: flex;
     gap: 80px;
 }
 
-.cabecalho__menu__link{
+.cabecalho__menu__link {
     color: #3bfd22;
     font-family: 'Russo One', sans-serif;
     font-size: 1.5rem;
@@ -53,4 +74,30 @@ body {
 
 .titulo__destaque{
     color: #3bfd22;
+}
+
+@media screen and (max-width: 1000px) {
+    .cabecalho{
+        
+    }
+    .cabecalho__marca{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cabecalho__marca__logo{
+       width: 40%;
+       margin: 0;
+       padding: 0;
+    }
+
+    .cabecalho__marca__nome{
+        font-weight: 200;
+        font-style: normal;
+        font-size: 1.25rem;
+        margin: 0;
+        padding: 0;
+    }
 }
